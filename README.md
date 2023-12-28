@@ -11,7 +11,7 @@
 
 The data contains 60 features, in which the target field is the prediction target. The main feature fields are divided into two categories: cat and num, which are discrete features and numerical features, respectively.
 
-![dataset](C:\Users\18328\Desktop\ai大作业\assets\dataset.png)
+![dataset](assets\dataset.png)
 
 ## Tools
 
@@ -71,7 +71,7 @@ df['target'].value_counts()
 df['target'].value_counts().plot(kind='pie',autopct='%.3f%%')
 ```
 
-![target.png](C:\Users\18328\Desktop\ai大作业\assets\target.png)
+![target.png](assets\target.png)
 
 #### (4)Data preprocessing and preliminary modeling
 
@@ -93,7 +93,7 @@ print(classification_report(Ytrain,clf.predict(Xtrain)))
 #由此可以看出此时的模型是完全无效的
 ```
 
-![first.png](C:\Users\18328\Desktop\ai大作业\assets\first.png)
+![first.png](assets\first.png)
 
 #### (5)normalization processing
 
@@ -140,7 +140,7 @@ print(classification_report(Ytrain,clf.predict(Xtrain)))
   area
   ```
 
-  ![second.png](C:\Users\18328\Desktop\ai大作业\assets\second.png)
+  ![second.png](assets\second.png)
 
 #### (7) Adjusting the hyperparameters and get the final model
 
@@ -159,9 +159,9 @@ print(classification_report(Ytrain,clf.predict(Xtrain)))
   FPR,recall,thresholds = roc_curve(Ytest,clf.predict_proba(Xtest)[:,1])
   ```
 
-  ![third.png](C:\Users\18328\Desktop\ai大作业\assets\third.png)
+  ![third.png](assets\third.png)
 
-  ![image-20231228211606753](C:\Users\18328\Desktop\ai大作业\assets\roc.png)
+  ![image-20231228211606753](assets\roc.png)
 
 ### 2、DecisionTreeClassifier🎄
 
@@ -237,7 +237,7 @@ model.fit(X_train,y_train)
 
   result：
 
-  ![](C:\Users\18328\Desktop\ai大作业\assets\tree_auc1.png)
+  ![](assets\tree_auc1.png)
 
   ![](C:\Users\18328\Desktop\ai大作业\assets\tree_score1.png)
 
@@ -258,7 +258,7 @@ model.fit(X_train,y_train)
   plt.show()
   ```
 
-  ![](C:\Users\18328\Desktop\ai大作业\assets\tree_roc.png)	
+  ![](assets\tree_roc.png)	
 
   ​												-ROC curve for DecisionTree
 
