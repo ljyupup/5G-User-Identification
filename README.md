@@ -11,7 +11,7 @@
 
 The data contains 60 features, in which the target field is the prediction target. The main feature fields are divided into two categories: cat and num, which are discrete features and numerical features, respectively.
 
-![dataset](assets\dataset.png)
+![dataset](./assets/dataset.png)
 
 ## Tools
 
